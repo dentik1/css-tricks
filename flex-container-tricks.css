@@ -1,1 +1,22 @@
+//Usage: When I need a layout in which all children's widths are even
 
+// This one is the main container. Everything will be put in the center of the layout
+.body-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+// This is the next container - here we make sure everything is aligned.
+.body-wrapper-inline-flex{
+  display: inline-flex;
+  flex-direction: column;
+}
+
+// Finally each child of the second container should have those two specific properties (Im not sure if we need to set a max-width
+// but it is worth trying.
+
+.child-flex-element {
+  flex-grow: 1;
+  flex-basis: 0;
+}
